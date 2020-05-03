@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Wed Feb 12 17:59:05 2020
+# Process ID: 11714
+# Current directory: /home/simon
+# Command line: vivado -log /home/simon/Dokumente/Xilinx_WS/tmp_location/vivado.log -journal /home/simon/Dokumente/Xilinx_WS/tmp_location/vivado.jou
+# Log file: /home/simon/Dokumente/Xilinx_WS/tmp_location/vivado.log
+# Journal file: /home/simon/Dokumente/Xilinx_WS/tmp_location/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/simon/Dokumente/EIB_S8-BA/Abgabe-CD/02_Hardware-Designs/AXI-DMA/microzed_axi_dma/microzed_axi_dma.xpr
+update_compile_order -fileset sources_1
+file copy -force /home/simon/Dokumente/EIB_S8-BA/Abgabe-CD/02_Hardware-Designs/AXI-DMA/microzed_axi_dma/microzed_axi_dma.runs/impl_1/microzed_axi_dma_wrapper.sysdef /home/simon/Dokumente/EIB_S8-BA/Abgabe-CD/02_Hardware-Designs/AXI-DMA/microzed_axi_dma/microzed_axi_dma.sdk/microzed_axi_dma_wrapper.hdf
+
+open_bd_design {/home/simon/Dokumente/EIB_S8-BA/Abgabe-CD/02_Hardware-Designs/AXI-DMA/microzed_axi_dma/microzed_axi_dma.srcs/sources_1/bd/microzed_axi_dma/microzed_axi_dma.bd}
+write_bd_layout -format pdf -orientation portrait /home/simon/Dokumente/EIB_S8-BA/Abgabe-CD/02_Hardware-Designs/AXI-DMA/Block-Design-microzed_axi_dma.pdf
+write_bd_layout -format pdf -orientation landscape /home/simon/Dokumente/EIB_S8-BA/Abgabe-CD/02_Hardware-Designs/AXI-DMA/microzed_axi_dma.pdf
+write_bd_layout -format pdf -orientation portrait -force /home/simon/Dokumente/EIB_S8-BA/Abgabe-CD/02_Hardware-Designs/AXI-DMA/Block-Design-microzed_axi_dma.pdf
+write_bd_layout -format pdf -orientation landscape -force /home/simon/Dokumente/EIB_S8-BA/Abgabe-CD/02_Hardware-Designs/AXI-DMA/Block-Design-microzed_axi_dma.pdf
+archive_project /home/simon/Dokumente/EIB_S8-BA/Abgabe-CD/02_Hardware-Designs/AXI-DMA/microzed_axi_dma.xpr.zip -force -include_local_ip_cache -include_config_settings

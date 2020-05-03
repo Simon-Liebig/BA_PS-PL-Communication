@@ -1,0 +1,201 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Wed Jan  8 12:15:38 2020
+# Process ID: 18591
+# Current directory: /home/simon/IP_repro/fir_memo_top_v1_1/tmp_edit_project.runs/impl_1
+# Command line: vivado -log fir_memo_top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source fir_memo_top.tcl -notrace
+# Log file: /home/simon/IP_repro/fir_memo_top_v1_1/tmp_edit_project.runs/impl_1/fir_memo_top.vdi
+# Journal file: /home/simon/IP_repro/fir_memo_top_v1_1/tmp_edit_project.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source fir_memo_top.tcl -notrace
+Command: link_design -top fir_memo_top -part xc7z020clg400-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Netlist 29-17] Analyzing 779 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/simon/IP_repro/fir_memo_top_v1_1/src/Z7010 or Z7020 MicroZed with MBCC-IO-PCB-D_v2.xdc]
+Finished Parsing XDC File [/home/simon/IP_repro/fir_memo_top_v1_1/src/Z7010 or Z7020 MicroZed with MBCC-IO-PCB-D_v2.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+7 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:34 . Memory (MB): peak = 1469.551 ; gain = 305.062 ; free physical = 480 ; free virtual = 7835
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1517.566 ; gain = 48.016 ; free physical = 472 ; free virtual = 7828
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 25c5ec50c
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.91 . Memory (MB): peak = 1980.059 ; gain = 0.000 ; free physical = 146 ; free virtual = 7460
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 0 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 25c5ec50c
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1980.059 ; gain = 0.000 ; free physical = 146 ; free virtual = 7460
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 1f4673b4b
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1980.059 ; gain = 0.000 ; free physical = 145 ; free virtual = 7459
+INFO: [Opt 31-389] Phase Sweep created 1 cells and removed 0 cells
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: 1f4673b4b
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1980.059 ; gain = 0.000 ; free physical = 144 ; free virtual = 7459
+INFO: [Opt 31-389] Phase BUFG optimization created 0 cells and removed 0 cells
+
+Phase 5 Shift Register Optimization
+Phase 5 Shift Register Optimization | Checksum: 1f4673b4b
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1980.059 ; gain = 0.000 ; free physical = 144 ; free virtual = 7459
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1980.059 ; gain = 0.000 ; free physical = 143 ; free virtual = 7459
+Ending Logic Optimization Task | Checksum: 26f32eacf
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1980.059 ; gain = 0.000 ; free physical = 143 ; free virtual = 7459
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=0.000 | TNS=0.000 |
+WARNING: [Power 33-232] No user defined clocks were found in the design!
+Resolution: Please specify clocks using create_clock/create_generated_clock for sequential elements. For pure combinatorial circuits, please specify a virtual clock, otherwise the vectorless estimation might be inaccurate
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 4 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 0 newly gated: 0 Total Ports: 8
+Ending PowerOpt Patch Enables Task | Checksum: 1a48d81ba
+
+Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.07 . Memory (MB): peak = 2240.172 ; gain = 0.000 ; free physical = 254 ; free virtual = 7430
+Ending Power Optimization Task | Checksum: 1a48d81ba
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 2240.172 ; gain = 260.113 ; free physical = 262 ; free virtual = 7438
+INFO: [Common 17-83] Releasing license: Implementation
+28 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:35 ; elapsed = 00:00:40 . Memory (MB): peak = 2240.172 ; gain = 770.621 ; free physical = 262 ; free virtual = 7438
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.10 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2240.172 ; gain = 0.000 ; free physical = 261 ; free virtual = 7439
+INFO: [Common 17-1381] The checkpoint '/home/simon/IP_repro/fir_memo_top_v1_1/tmp_edit_project.runs/impl_1/fir_memo_top_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file fir_memo_top_drc_opted.rpt -pb fir_memo_top_drc_opted.pb -rpx fir_memo_top_drc_opted.rpx
+Command: report_drc -file fir_memo_top_drc_opted.rpt -pb fir_memo_top_drc_opted.pb -rpx fir_memo_top_drc_opted.rpx
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/simon/Dokumente/EIB_S8-BA/Kohlert/demo_ila_nov18.xpr/demo_ila_nov18'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/simon/IP_repro'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository '/home/simon/IP_repro' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is '/home/simon/IP_repro/fir_memo_top_v1_1/tmp_edit_project.runs/impl_1'.)
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2017.4/data/ip'.
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/simon/IP_repro/fir_memo_top_v1_1/tmp_edit_project.runs/impl_1/fir_memo_top_drc_opted.rpt.
+report_drc completed successfully
+INFO: [Chipscope 16-241] No debug cores found in the current design.
+Before running the implement_debug_core command, either use the Set Up Debug wizard (GUI mode)
+or use the create_debug_core and connect_debug_core Tcl commands to insert debug cores into the design.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 4 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2240.172 ; gain = 0.000 ; free physical = 236 ; free virtual = 7424
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: d82acfe0
+
+Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.08 . Memory (MB): peak = 2240.172 ; gain = 0.000 ; free physical = 236 ; free virtual = 7424
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2240.172 ; gain = 0.000 ; free physical = 240 ; free virtual = 7425
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+ERROR: [Place 30-58] IO placement is infeasible. Number of unplaced terminals (108) is greater than number of available sites (75).
+The following are banks with available pins: 
+ERROR: [Place 30-374] IO placer failed to find a solution
+Below is the partial placement that can be analyzed to see if any constraint modifications will make the IO placement problem easier to solve.
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                                                     IO Placement : Bank Stats                                                                           |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+| Id | Pins  | Terms |                               Standards                                |                IDelayCtrls               |  VREF  |  VCCO  |   VR   | DCI |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+|  0 |     0 |     0 |                                                                        |                                          |        |        |        |     |
+| 13 |    25 |     0 |                                                                        |                                          |        |        |        |     |
+| 34 |    50 |     4 | LVCMOS33(4)                                                            |                                          |        |  +3.30 |    YES |     |
+| 35 |    50 |     0 |                                                                        |                                          |        |        |        |     |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+|    |   125 |     4 |                                                                        |                                          |        |        |        |     |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+
+IO Placement:
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+| BankId |             Terminal | Standard        | Site                 | Pin                  | Attributes           |
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+| 34     | JA4_5_N              | LVCMOS33        | IOB_X1Y91            | W13                  |                      |
+|        | JA4_5_P              | LVCMOS33        | IOB_X1Y92            | V12                  |                      |
+|        | JA6_7_N              | LVCMOS33        | IOB_X1Y89            | T15                  |                      |
+|        | JA6_7_P              | LVCMOS33        | IOB_X1Y90            | T14                  |                      |
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 17597e53a
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:04 . Memory (MB): peak = 2240.172 ; gain = 0.000 ; free physical = 212 ; free virtual = 7403
+Phase 1 Placer Initialization | Checksum: 17597e53a
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:04 . Memory (MB): peak = 2240.172 ; gain = 0.000 ; free physical = 212 ; free virtual = 7403
+ERROR: [Place 30-99] Placer failed with error: 'IO Clock Placer failed'
+Please review all ERROR, CRITICAL WARNING, and WARNING messages during placement to understand the cause for failure.
+Ending Placer Task | Checksum: 17597e53a
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:04 . Memory (MB): peak = 2240.172 ; gain = 0.000 ; free physical = 213 ; free virtual = 7404
+INFO: [Common 17-83] Releasing license: Implementation
+49 Infos, 2 Warnings, 0 Critical Warnings and 4 Errors encountered.
+place_design failed
+ERROR: [Common 17-69] Command failed: Placer could not place all instances
+INFO: [Common 17-206] Exiting Vivado at Wed Jan  8 12:17:17 2020...

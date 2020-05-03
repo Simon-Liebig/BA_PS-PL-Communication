@@ -1,0 +1,35 @@
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2017.4/bin/unwrapped/lnx64.o/xelab -wto b17d68d5aa794b24bc0bf06397f6be24 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip -L xpm --snapshot fir_memo_top_behav xil_defaultlib.fir_memo_top -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_unsigned
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling architecture bufg_v of entity unisim.BUFG [bufg_default]
+Compiling architecture arch_dp_ram_byte0 of entity xil_defaultlib.dp_ram_byte0 [dp_ram_byte0_default]
+Compiling architecture arch_dp_ram_byte1 of entity xil_defaultlib.dp_ram_byte1 [dp_ram_byte1_default]
+Compiling architecture arch_dp_ram_byte2 of entity xil_defaultlib.dp_ram_byte2 [dp_ram_byte2_default]
+Compiling architecture arch_dp_ram_byte3 of entity xil_defaultlib.dp_ram_byte3 [dp_ram_byte3_default]
+Compiling architecture arch_mem_top of entity xil_defaultlib.mem_top [mem_top_default]
+Compiling architecture arch_sreg_fir of entity xil_defaultlib.sreg_fir [sreg_fir_default]
+Compiling architecture arch_gen_reg24 of entity xil_defaultlib.gen_reg24 [gen_reg24_default]
+Compiling architecture arch_fir_serial_coeffs of entity xil_defaultlib.fir_serial_coeffs [fir_serial_coeffs_default]
+Compiling architecture arch_adda_firtop of entity xil_defaultlib.adda_firtop [adda_firtop_default]
+Compiling architecture arch_gen_reg32 of entity xil_defaultlib.gen_reg32 [gen_reg32_default]
+Compiling architecture arch_reg_par of entity xil_defaultlib.reg_par [reg_par_default]
+Compiling architecture arch_fsm_pmodda3 of entity xil_defaultlib.fsm_pmodda3 [fsm_pmodda3_default]
+Compiling architecture arch_spi_ad5541 of entity xil_defaultlib.spi_ad5541 [spi_ad5541_default]
+Compiling architecture arch_fir_memo_top of entity xil_defaultlib.fir_memo_top
+Built simulation snapshot fir_memo_top_behav

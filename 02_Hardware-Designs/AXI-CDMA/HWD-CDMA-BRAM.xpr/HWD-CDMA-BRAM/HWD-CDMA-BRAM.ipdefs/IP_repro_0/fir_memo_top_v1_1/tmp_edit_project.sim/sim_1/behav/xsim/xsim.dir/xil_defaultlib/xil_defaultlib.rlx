@@ -1,0 +1,18 @@
+0.6
+2017.4
+Dec 15 2017
+20:57:24
+/home/simon/IP_repro/fir_memo_top_v1_1/src/adda_firtop.vhd,1576851970,vhdl,,,,adda_firtop,,,,,,,,
+/home/simon/IP_repro/fir_memo_top_v1_1/src/dp_ram_byte0.vhd,1576851970,vhdl,,,,dp_ram_byte0,,,,,,,,
+/home/simon/IP_repro/fir_memo_top_v1_1/src/dp_ram_byte1.vhd,1576851970,vhdl,,,,dp_ram_byte1,,,,,,,,
+/home/simon/IP_repro/fir_memo_top_v1_1/src/dp_ram_byte2.vhd,1576851970,vhdl,,,,dp_ram_byte2,,,,,,,,
+/home/simon/IP_repro/fir_memo_top_v1_1/src/dp_ram_byte3.vhd,1576851970,vhdl,,,,dp_ram_byte3,,,,,,,,
+/home/simon/IP_repro/fir_memo_top_v1_1/src/fir_memo_top.vhd,1576867833,vhdl,,,,fir_memo_top,,,,,,,,
+/home/simon/IP_repro/fir_memo_top_v1_1/src/fir_serial_coeffs.vhd,1576851970,vhdl,,,,fir_serial_coeffs,,,,,,,,
+/home/simon/IP_repro/fir_memo_top_v1_1/src/fsm_pmodda3.vhd,1576851970,vhdl,,,,fsm_pmodda3,,,,,,,,
+/home/simon/IP_repro/fir_memo_top_v1_1/src/gen_reg24.vhd,1576851970,vhdl,,,,gen_reg24,,,,,,,,
+/home/simon/IP_repro/fir_memo_top_v1_1/src/gen_reg32.vhd,1576851970,vhdl,,,,gen_reg32,,,,,,,,
+/home/simon/IP_repro/fir_memo_top_v1_1/src/mem_top.vhd,1576876661,vhdl,,,,mem_top,,,,,,,,
+/home/simon/IP_repro/fir_memo_top_v1_1/src/reg_par.vhd,1576851970,vhdl,,,,reg_par,,,,,,,,
+/home/simon/IP_repro/fir_memo_top_v1_1/src/spi_ad5541.vhd,1576851970,vhdl,,,,spi_ad5541,,,,,,,,
+/home/simon/IP_repro/fir_memo_top_v1_1/src/sreg_fir.vhd,1576851970,vhdl,,,,sreg_fir,,,,,,,,

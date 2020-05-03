@@ -1,0 +1,28 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/simon/IP_repro/fir_memo_top_v1_1/src/adda_firtop.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity adda_firtop
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/simon/IP_repro/fir_memo_top_v1_1/src/dp_ram_byte0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity dp_ram_byte0
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/simon/IP_repro/fir_memo_top_v1_1/src/dp_ram_byte1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity dp_ram_byte1
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/simon/IP_repro/fir_memo_top_v1_1/src/dp_ram_byte2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity dp_ram_byte2
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/simon/IP_repro/fir_memo_top_v1_1/src/dp_ram_byte3.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity dp_ram_byte3
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/simon/IP_repro/fir_memo_top_v1_1/src/fir_serial_coeffs.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity fir_serial_coeffs
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/simon/IP_repro/fir_memo_top_v1_1/src/fsm_pmodda3.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity fsm_pmodda3
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/simon/IP_repro/fir_memo_top_v1_1/src/gen_reg24.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity gen_reg24
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/simon/IP_repro/fir_memo_top_v1_1/src/gen_reg32.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity gen_reg32
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/simon/IP_repro/fir_memo_top_v1_1/src/mem_top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mem_top
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/simon/IP_repro/fir_memo_top_v1_1/src/reg_par.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity reg_par
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/simon/IP_repro/fir_memo_top_v1_1/src/spi_ad5541.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity spi_ad5541
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/simon/IP_repro/fir_memo_top_v1_1/src/sreg_fir.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sreg_fir
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/simon/IP_repro/fir_memo_top_v1_1/src/fir_memo_top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity fir_memo_top

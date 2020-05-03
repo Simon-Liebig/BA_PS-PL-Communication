@@ -1,0 +1,258 @@
+
+*** Running vivado
+    with args -log design_1_edge_detect_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_edge_detect_0_0.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source design_1_edge_detect_0_0.tcl -notrace
+Command: synth_design -top design_1_edge_detect_0_0 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 19926 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1258.863 ; gain = 80.996 ; free physical = 992 ; free virtual = 7769
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_edge_detect_0_0' [/home/simon/FPGADEVELOPER/FFT-Example/FFT-Example/FFT-Example.srcs/sources_1/bd/design_1/ip/design_1_edge_detect_0_0/synth/design_1_edge_detect_0_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'edge_detect' [/home/simon/FPGADEVELOPER/FFT-Example/FFT-Example/FFT-Example.srcs/sources_1/bd/design_1/ipshared/b340/project_1.srcs/sources_1/imports/lib/edge_detect.v:23]
+	Parameter N bound to: 24 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'edge_detect' (1#1) [/home/simon/FPGADEVELOPER/FFT-Example/FFT-Example/FFT-Example.srcs/sources_1/bd/design_1/ipshared/b340/project_1.srcs/sources_1/imports/lib/edge_detect.v:23]
+INFO: [Synth 8-256] done synthesizing module 'design_1_edge_detect_0_0' (2#1) [/home/simon/FPGADEVELOPER/FFT-Example/FFT-Example/FFT-Example.srcs/sources_1/bd/design_1/ip/design_1_edge_detect_0_0/synth/design_1_edge_detect_0_0.v:57]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1301.395 ; gain = 123.527 ; free physical = 1010 ; free virtual = 7787
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1301.395 ; gain = 123.527 ; free physical = 1006 ; free virtual = 7783
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1624.410 ; gain = 0.000 ; free physical = 555 ; free virtual = 7334
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:36 ; elapsed = 00:00:53 . Memory (MB): peak = 1624.410 ; gain = 446.543 ; free physical = 523 ; free virtual = 7301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:36 ; elapsed = 00:00:53 . Memory (MB): peak = 1624.410 ; gain = 446.543 ; free physical = 523 ; free virtual = 7301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:36 ; elapsed = 00:00:53 . Memory (MB): peak = 1624.410 ; gain = 446.543 ; free physical = 525 ; free virtual = 7303
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:36 ; elapsed = 00:00:53 . Memory (MB): peak = 1624.410 ; gain = 446.543 ; free physical = 525 ; free virtual = 7303
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               24 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module edge_detect 
+Detailed RTL Component Info : 
++---Registers : 
+	               24 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:54 . Memory (MB): peak = 1624.410 ; gain = 446.543 ; free physical = 514 ; free virtual = 7292
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:45 ; elapsed = 00:01:06 . Memory (MB): peak = 1624.410 ; gain = 446.543 ; free physical = 374 ; free virtual = 7152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:45 ; elapsed = 00:01:06 . Memory (MB): peak = 1624.410 ; gain = 446.543 ; free physical = 374 ; free virtual = 7152
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:45 ; elapsed = 00:01:06 . Memory (MB): peak = 1632.418 ; gain = 454.551 ; free physical = 373 ; free virtual = 7151
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:46 ; elapsed = 00:01:07 . Memory (MB): peak = 1632.418 ; gain = 454.551 ; free physical = 366 ; free virtual = 7144
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:46 ; elapsed = 00:01:07 . Memory (MB): peak = 1632.418 ; gain = 454.551 ; free physical = 366 ; free virtual = 7144
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:46 ; elapsed = 00:01:07 . Memory (MB): peak = 1632.418 ; gain = 454.551 ; free physical = 366 ; free virtual = 7144
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:46 ; elapsed = 00:01:07 . Memory (MB): peak = 1632.418 ; gain = 454.551 ; free physical = 366 ; free virtual = 7144
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:46 ; elapsed = 00:01:07 . Memory (MB): peak = 1632.418 ; gain = 454.551 ; free physical = 365 ; free virtual = 7143
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:46 ; elapsed = 00:01:07 . Memory (MB): peak = 1632.418 ; gain = 454.551 ; free physical = 365 ; free virtual = 7143
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |     2|
+|2     |LUT6   |     8|
+|3     |FDRE   |    25|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+------------+------+
+|      |Instance |Module      |Cells |
++------+---------+------------+------+
+|1     |top      |            |    35|
+|2     |  inst   |edge_detect |    35|
++------+---------+------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:46 ; elapsed = 00:01:07 . Memory (MB): peak = 1632.418 ; gain = 454.551 ; free physical = 365 ; free virtual = 7143
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:32 ; elapsed = 00:00:37 . Memory (MB): peak = 1632.418 ; gain = 131.535 ; free physical = 423 ; free virtual = 7201
+Synthesis Optimization Complete : Time (s): cpu = 00:00:46 ; elapsed = 00:01:07 . Memory (MB): peak = 1632.426 ; gain = 454.551 ; free physical = 423 ; free virtual = 7201
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+15 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:48 ; elapsed = 00:01:08 . Memory (MB): peak = 1632.426 ; gain = 467.934 ; free physical = 396 ; free virtual = 7174
+INFO: [Common 17-1381] The checkpoint '/home/simon/FPGADEVELOPER/FFT-Example/FFT-Example/FFT-Example.runs/design_1_edge_detect_0_0_synth_1/design_1_edge_detect_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP /home/simon/FPGADEVELOPER/FFT-Example/FFT-Example/FFT-Example.srcs/sources_1/bd/design_1/ip/design_1_edge_detect_0_0/design_1_edge_detect_0_0.xci
+INFO: [Common 17-1381] The checkpoint '/home/simon/FPGADEVELOPER/FFT-Example/FFT-Example/FFT-Example.runs/design_1_edge_detect_0_0_synth_1/design_1_edge_detect_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_edge_detect_0_0_utilization_synth.rpt -pb design_1_edge_detect_0_0_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00.15 ; elapsed = 00:00:00.19 . Memory (MB): peak = 1632.426 ; gain = 0.000 ; free physical = 390 ; free virtual = 7168
+INFO: [Common 17-206] Exiting Vivado at Wed Feb  5 12:46:02 2020...

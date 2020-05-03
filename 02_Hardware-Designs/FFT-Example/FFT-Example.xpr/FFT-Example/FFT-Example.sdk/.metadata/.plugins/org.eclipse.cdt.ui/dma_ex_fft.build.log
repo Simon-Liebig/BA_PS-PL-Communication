@@ -1,0 +1,8 @@
+14:57:26 **** Incremental Build of configuration Debug for project dma_ex_fft ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Für das Ziel „main-build“ ist nichts zu tun.
+
+14:57:27 Build Finished (took 675ms)
+

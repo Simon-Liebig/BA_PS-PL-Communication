@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Tue Jan 21 12:12:24 2020
+# Process ID: 7187
+# Current directory: /home/simon/FPGADEVELOPER/HWD-CDMA-BRAM-ila/HWD-CDMA-BRAM.runs/impl_1
+# Command line: vivado -log design_1_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace
+# Log file: /home/simon/FPGADEVELOPER/HWD-CDMA-BRAM-ila/HWD-CDMA-BRAM.runs/impl_1/design_1_wrapper.vdi
+# Journal file: /home/simon/FPGADEVELOPER/HWD-CDMA-BRAM-ila/HWD-CDMA-BRAM.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source design_1_wrapper.tcl -notrace

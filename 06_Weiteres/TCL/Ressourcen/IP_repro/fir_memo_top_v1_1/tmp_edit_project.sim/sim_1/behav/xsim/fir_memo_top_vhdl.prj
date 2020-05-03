@@ -1,0 +1,19 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../src/adda_firtop.vhd" \
+"../../../../src/dp_ram_byte0.vhd" \
+"../../../../src/dp_ram_byte1.vhd" \
+"../../../../src/dp_ram_byte2.vhd" \
+"../../../../src/dp_ram_byte3.vhd" \
+"../../../../src/fir_serial_coeffs.vhd" \
+"../../../../src/fsm_pmodda3.vhd" \
+"../../../../src/gen_reg24.vhd" \
+"../../../../src/gen_reg32.vhd" \
+"../../../../src/mem_top.vhd" \
+"../../../../src/reg_par.vhd" \
+"../../../../src/spi_ad5541.vhd" \
+"../../../../src/sreg_fir.vhd" \
+"../../../../src/fir_memo_top.vhd" \
+
+# Do not sort compile order
+nosort

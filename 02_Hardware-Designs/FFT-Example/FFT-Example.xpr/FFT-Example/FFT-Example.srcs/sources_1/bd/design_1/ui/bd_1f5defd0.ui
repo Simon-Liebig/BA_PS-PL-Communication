@@ -1,0 +1,24 @@
+{
+   ExpandedHierarchyInLayout: "",
+   guistr: "# # String gsaved with Nlview 6.6.11  2017-06-12 bk=1.3860 VDI=40 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -y 20 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -y 40 -defaultsOSRD
+preplace inst ctrl -pg 1 -lvl 1 -y 250 -defaultsOSRD
+preplace inst accelerator -pg 1 -lvl 1 -y 90 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 1 -y 460 -defaultsOSRD
+preplace netloc processing_system7_0_ddr 1 1 1 560
+preplace netloc axi_dma_0_m_axis_mm2s 1 0 2 -40 590 500
+preplace netloc axi_interconnect_0_m00_axi 1 0 2 10 600 490
+preplace netloc edge_detect_0_edge_detected 1 0 2 -50 640 520
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 2 -30 650 480
+preplace netloc xfft_0_m_axis_data 1 0 2 0 620 540
+preplace netloc s00_axi_1 1 0 2 -10 610 470
+preplace netloc xlconcat_0_dout 1 0 2 -20 670 550
+preplace netloc axi_gpio_0_gpio_io_o 1 0 2 -60 630 530
+preplace netloc processing_system7_0_fixed_io 1 1 1 570
+preplace netloc processing_system7_0_fclk_clk0 1 0 2 -70 660 510
+levelinfo -pg 1 -90 240 590 -top 0 -bot 680
+",
+}
+

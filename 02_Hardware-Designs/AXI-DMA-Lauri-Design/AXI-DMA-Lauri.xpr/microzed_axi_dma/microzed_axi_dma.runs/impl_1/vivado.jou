@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Tue Feb 11 12:28:49 2020
+# Process ID: 11531
+# Current directory: /home/simon/FPGADEVELOPER/ALT/AXI-DMA-Lauri-Design/microzed_axi_dma/microzed_axi_dma.runs/impl_1
+# Command line: vivado -log microzed_axi_dma_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source microzed_axi_dma_wrapper.tcl -notrace
+# Log file: /home/simon/FPGADEVELOPER/ALT/AXI-DMA-Lauri-Design/microzed_axi_dma/microzed_axi_dma.runs/impl_1/microzed_axi_dma_wrapper.vdi
+# Journal file: /home/simon/FPGADEVELOPER/ALT/AXI-DMA-Lauri-Design/microzed_axi_dma/microzed_axi_dma.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source microzed_axi_dma_wrapper.tcl -notrace

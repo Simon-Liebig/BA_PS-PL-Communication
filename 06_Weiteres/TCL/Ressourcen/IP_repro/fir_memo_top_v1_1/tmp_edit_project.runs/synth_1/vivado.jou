@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Wed Jan  8 12:12:41 2020
+# Process ID: 18406
+# Current directory: /home/simon/IP_repro/fir_memo_top_v1_1/tmp_edit_project.runs/synth_1
+# Command line: vivado -log fir_memo_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source fir_memo_top.tcl
+# Log file: /home/simon/IP_repro/fir_memo_top_v1_1/tmp_edit_project.runs/synth_1/fir_memo_top.vds
+# Journal file: /home/simon/IP_repro/fir_memo_top_v1_1/tmp_edit_project.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source fir_memo_top.tcl -notrace

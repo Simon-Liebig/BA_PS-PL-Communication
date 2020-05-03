@@ -1,0 +1,1132 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon Jan 13 18:53:07 2020
+# Process ID: 16751
+# Current directory: /home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.runs/design_1_fir_memo_top_0_0_synth_1
+# Command line: vivado -log design_1_fir_memo_top_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_fir_memo_top_0_0.tcl
+# Log file: /home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.runs/design_1_fir_memo_top_0_0_synth_1/design_1_fir_memo_top_0_0.vds
+# Journal file: /home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.runs/design_1_fir_memo_top_0_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source design_1_fir_memo_top_0_0.tcl -notrace
+Command: synth_design -top design_1_fir_memo_top_0_0 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 16765 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1258.859 ; gain = 80.996 ; free physical = 142 ; free virtual = 6643
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_fir_memo_top_0_0' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ip/design_1_fir_memo_top_0_0/synth/design_1_fir_memo_top_0_0.vhd:75]
+INFO: [Synth 8-3491] module 'fir_memo_top' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_memo_top.vhd:10' bound to instance 'U0' of component 'fir_memo_top' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ip/design_1_fir_memo_top_0_0/synth/design_1_fir_memo_top_0_0.vhd:101]
+INFO: [Synth 8-638] synthesizing module 'fir_memo_top' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_memo_top.vhd:29]
+INFO: [Synth 8-113] binding component instance 'clkf_buf' to cell 'BUFG' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_memo_top.vhd:91]
+INFO: [Synth 8-3491] module 'mem_top' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/mem_top.vhd:6' bound to instance 'i_mem_top' of component 'mem_top' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_memo_top.vhd:98]
+INFO: [Synth 8-638] synthesizing module 'mem_top' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/mem_top.vhd:19]
+INFO: [Synth 8-3491] module 'dp_ram_byte0' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/dp_ram_byte0.vhd:5' bound to instance 'my_mem0' of component 'dp_ram_byte0' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/mem_top.vhd:101]
+INFO: [Synth 8-638] synthesizing module 'dp_ram_byte0' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/dp_ram_byte0.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'dp_ram_byte0' (1#1) [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/dp_ram_byte0.vhd:19]
+INFO: [Synth 8-3491] module 'dp_ram_byte1' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/dp_ram_byte1.vhd:5' bound to instance 'my_mem1' of component 'dp_ram_byte1' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/mem_top.vhd:116]
+INFO: [Synth 8-638] synthesizing module 'dp_ram_byte1' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/dp_ram_byte1.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'dp_ram_byte1' (2#1) [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/dp_ram_byte1.vhd:19]
+INFO: [Synth 8-3491] module 'dp_ram_byte2' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/dp_ram_byte2.vhd:5' bound to instance 'my_mem2' of component 'dp_ram_byte2' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/mem_top.vhd:131]
+INFO: [Synth 8-638] synthesizing module 'dp_ram_byte2' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/dp_ram_byte2.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'dp_ram_byte2' (3#1) [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/dp_ram_byte2.vhd:19]
+INFO: [Synth 8-3491] module 'dp_ram_byte3' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/dp_ram_byte3.vhd:5' bound to instance 'my_mem3' of component 'dp_ram_byte3' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/mem_top.vhd:146]
+INFO: [Synth 8-638] synthesizing module 'dp_ram_byte3' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/dp_ram_byte3.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'dp_ram_byte3' (4#1) [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/dp_ram_byte3.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'mem_top' (5#1) [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/mem_top.vhd:19]
+INFO: [Synth 8-3491] module 'adda_firtop' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/adda_firtop.vhd:13' bound to instance 'i_adda_firtop' of component 'adda_firtop' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_memo_top.vhd:112]
+INFO: [Synth 8-638] synthesizing module 'adda_firtop' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/adda_firtop.vhd:26]
+INFO: [Synth 8-3491] module 'fir_serial_coeffs' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_serial_coeffs.vhd:9' bound to instance 'myfilter' of component 'fir_serial_coeffs' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/adda_firtop.vhd:62]
+INFO: [Synth 8-638] synthesizing module 'fir_serial_coeffs' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_serial_coeffs.vhd:20]
+INFO: [Synth 8-3491] module 'sreg_fir' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/sreg_fir.vhd:13' bound to instance 'i_sreg_fir' of component 'sreg_fir' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_serial_coeffs.vhd:454]
+INFO: [Synth 8-638] synthesizing module 'sreg_fir' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/sreg_fir.vhd:121]
+INFO: [Synth 8-256] done synthesizing module 'sreg_fir' (6#1) [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/sreg_fir.vhd:121]
+INFO: [Synth 8-3491] module 'gen_reg24' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/gen_reg24.vhd:6' bound to instance 'i_reg101' of component 'gen_reg24' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_serial_coeffs.vhd:567]
+INFO: [Synth 8-638] synthesizing module 'gen_reg24' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/gen_reg24.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'gen_reg24' (7#1) [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/gen_reg24.vhd:15]
+INFO: [Synth 8-3491] module 'gen_reg24' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/gen_reg24.vhd:6' bound to instance 'i_reg100' of component 'gen_reg24' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_serial_coeffs.vhd:570]
+INFO: [Synth 8-3491] module 'gen_reg24' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/gen_reg24.vhd:6' bound to instance 'i_reg99' of component 'gen_reg24' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_serial_coeffs.vhd:573]
+INFO: [Synth 8-3491] module 'gen_reg24' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/gen_reg24.vhd:6' bound to instance 'i_reg98' of component 'gen_reg24' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_serial_coeffs.vhd:576]
+INFO: [Synth 8-3491] module 'gen_reg24' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/gen_reg24.vhd:6' bound to instance 'i_reg97' of component 'gen_reg24' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_serial_coeffs.vhd:579]
+INFO: [Synth 8-3491] module 'gen_reg24' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/gen_reg24.vhd:6' bound to instance 'i_reg96' of component 'gen_reg24' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_serial_coeffs.vhd:582]
+INFO: [Synth 8-3491] module 'gen_reg24' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/gen_reg24.vhd:6' bound to instance 'i_reg95' of component 'gen_reg24' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_serial_coeffs.vhd:585]
+INFO: [Synth 8-3491] module 'gen_reg24' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/gen_reg24.vhd:6' bound to instance 'i_reg94' of component 'gen_reg24' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_serial_coeffs.vhd:588]
+INFO: [Synth 8-3491] module 'gen_reg24' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/gen_reg24.vhd:6' bound to instance 'i_reg93' of component 'gen_reg24' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_serial_coeffs.vhd:591]
+INFO: [Synth 8-3491] module 'gen_reg24' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/gen_reg24.vhd:6' bound to instance 'i_reg92' of component 'gen_reg24' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_serial_coeffs.vhd:594]
+INFO: [Synth 8-3491] module 'gen_reg24' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/gen_reg24.vhd:6' bound to instance 'i_reg91' of component 'gen_reg24' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_serial_coeffs.vhd:597]
+INFO: [Synth 8-3491] module 'gen_reg24' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/gen_reg24.vhd:6' bound to instance 'i_reg90' of component 'gen_reg24' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_serial_coeffs.vhd:600]
+INFO: [Synth 8-3491] module 'gen_reg24' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/gen_reg24.vhd:6' bound to instance 'i_reg89' of component 'gen_reg24' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_serial_coeffs.vhd:603]
+INFO: [Synth 8-3491] module 'gen_reg24' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/gen_reg24.vhd:6' bound to instance 'i_reg88' of component 'gen_reg24' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_serial_coeffs.vhd:606]
+INFO: [Synth 8-3491] module 'gen_reg24' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/gen_reg24.vhd:6' bound to instance 'i_reg87' of component 'gen_reg24' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_serial_coeffs.vhd:609]
+INFO: [Synth 8-3491] module 'gen_reg24' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/gen_reg24.vhd:6' bound to instance 'i_reg86' of component 'gen_reg24' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_serial_coeffs.vhd:612]
+INFO: [Synth 8-3491] module 'gen_reg24' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/gen_reg24.vhd:6' bound to instance 'i_reg85' of component 'gen_reg24' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_serial_coeffs.vhd:615]
+INFO: [Synth 8-3491] module 'gen_reg24' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/gen_reg24.vhd:6' bound to instance 'i_reg84' of component 'gen_reg24' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_serial_coeffs.vhd:618]
+INFO: [Synth 8-3491] module 'gen_reg24' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/gen_reg24.vhd:6' bound to instance 'i_reg83' of component 'gen_reg24' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_serial_coeffs.vhd:621]
+INFO: [Synth 8-3491] module 'gen_reg24' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/gen_reg24.vhd:6' bound to instance 'i_reg82' of component 'gen_reg24' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_serial_coeffs.vhd:624]
+INFO: [Synth 8-3491] module 'gen_reg24' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/gen_reg24.vhd:6' bound to instance 'i_reg81' of component 'gen_reg24' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_serial_coeffs.vhd:627]
+INFO: [Synth 8-3491] module 'gen_reg24' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/gen_reg24.vhd:6' bound to instance 'i_reg80' of component 'gen_reg24' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_serial_coeffs.vhd:630]
+INFO: [Synth 8-3491] module 'gen_reg24' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/gen_reg24.vhd:6' bound to instance 'i_reg79' of component 'gen_reg24' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_serial_coeffs.vhd:633]
+INFO: [Synth 8-3491] module 'gen_reg24' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/gen_reg24.vhd:6' bound to instance 'i_reg78' of component 'gen_reg24' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_serial_coeffs.vhd:636]
+INFO: [Synth 8-3491] module 'gen_reg24' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/gen_reg24.vhd:6' bound to instance 'i_reg77' of component 'gen_reg24' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_serial_coeffs.vhd:639]
+INFO: [Synth 8-3491] module 'gen_reg24' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/gen_reg24.vhd:6' bound to instance 'i_reg76' of component 'gen_reg24' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_serial_coeffs.vhd:642]
+INFO: [Synth 8-3491] module 'gen_reg24' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/gen_reg24.vhd:6' bound to instance 'i_reg75' of component 'gen_reg24' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_serial_coeffs.vhd:645]
+INFO: [Synth 8-3491] module 'gen_reg24' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/gen_reg24.vhd:6' bound to instance 'i_reg74' of component 'gen_reg24' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_serial_coeffs.vhd:648]
+INFO: [Synth 8-3491] module 'gen_reg24' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/gen_reg24.vhd:6' bound to instance 'i_reg73' of component 'gen_reg24' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_serial_coeffs.vhd:651]
+INFO: [Synth 8-3491] module 'gen_reg24' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/gen_reg24.vhd:6' bound to instance 'i_reg72' of component 'gen_reg24' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_serial_coeffs.vhd:654]
+INFO: [Synth 8-3491] module 'gen_reg24' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/gen_reg24.vhd:6' bound to instance 'i_reg71' of component 'gen_reg24' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_serial_coeffs.vhd:657]
+INFO: [Synth 8-3491] module 'gen_reg24' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/gen_reg24.vhd:6' bound to instance 'i_reg70' of component 'gen_reg24' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_serial_coeffs.vhd:660]
+INFO: [Synth 8-3491] module 'gen_reg24' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/gen_reg24.vhd:6' bound to instance 'i_reg69' of component 'gen_reg24' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_serial_coeffs.vhd:663]
+INFO: [Synth 8-3491] module 'gen_reg24' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/gen_reg24.vhd:6' bound to instance 'i_reg68' of component 'gen_reg24' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_serial_coeffs.vhd:666]
+INFO: [Synth 8-3491] module 'gen_reg24' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/gen_reg24.vhd:6' bound to instance 'i_reg67' of component 'gen_reg24' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_serial_coeffs.vhd:669]
+INFO: [Synth 8-3491] module 'gen_reg24' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/gen_reg24.vhd:6' bound to instance 'i_reg66' of component 'gen_reg24' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_serial_coeffs.vhd:672]
+INFO: [Synth 8-3491] module 'gen_reg24' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/gen_reg24.vhd:6' bound to instance 'i_reg65' of component 'gen_reg24' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_serial_coeffs.vhd:675]
+INFO: [Synth 8-3491] module 'gen_reg24' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/gen_reg24.vhd:6' bound to instance 'i_reg64' of component 'gen_reg24' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_serial_coeffs.vhd:678]
+INFO: [Synth 8-3491] module 'gen_reg24' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/gen_reg24.vhd:6' bound to instance 'i_reg63' of component 'gen_reg24' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_serial_coeffs.vhd:681]
+INFO: [Synth 8-3491] module 'gen_reg24' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/gen_reg24.vhd:6' bound to instance 'i_reg62' of component 'gen_reg24' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_serial_coeffs.vhd:684]
+INFO: [Synth 8-3491] module 'gen_reg24' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/gen_reg24.vhd:6' bound to instance 'i_reg61' of component 'gen_reg24' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_serial_coeffs.vhd:687]
+INFO: [Synth 8-3491] module 'gen_reg24' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/gen_reg24.vhd:6' bound to instance 'i_reg60' of component 'gen_reg24' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_serial_coeffs.vhd:690]
+INFO: [Synth 8-3491] module 'gen_reg24' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/gen_reg24.vhd:6' bound to instance 'i_reg59' of component 'gen_reg24' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_serial_coeffs.vhd:693]
+INFO: [Synth 8-3491] module 'gen_reg24' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/gen_reg24.vhd:6' bound to instance 'i_reg58' of component 'gen_reg24' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_serial_coeffs.vhd:696]
+INFO: [Synth 8-3491] module 'gen_reg24' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/gen_reg24.vhd:6' bound to instance 'i_reg57' of component 'gen_reg24' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_serial_coeffs.vhd:699]
+INFO: [Synth 8-3491] module 'gen_reg24' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/gen_reg24.vhd:6' bound to instance 'i_reg56' of component 'gen_reg24' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_serial_coeffs.vhd:702]
+INFO: [Synth 8-3491] module 'gen_reg24' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/gen_reg24.vhd:6' bound to instance 'i_reg55' of component 'gen_reg24' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_serial_coeffs.vhd:705]
+INFO: [Synth 8-3491] module 'gen_reg24' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/gen_reg24.vhd:6' bound to instance 'i_reg54' of component 'gen_reg24' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_serial_coeffs.vhd:708]
+INFO: [Synth 8-3491] module 'gen_reg24' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/gen_reg24.vhd:6' bound to instance 'i_reg53' of component 'gen_reg24' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_serial_coeffs.vhd:711]
+INFO: [Synth 8-3491] module 'gen_reg24' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/gen_reg24.vhd:6' bound to instance 'i_reg52' of component 'gen_reg24' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_serial_coeffs.vhd:714]
+INFO: [Synth 8-3491] module 'gen_reg24' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/gen_reg24.vhd:6' bound to instance 'i_reg51' of component 'gen_reg24' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_serial_coeffs.vhd:717]
+INFO: [Synth 8-3491] module 'gen_reg24' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/gen_reg24.vhd:6' bound to instance 'i_reg50' of component 'gen_reg24' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_serial_coeffs.vhd:720]
+INFO: [Synth 8-3491] module 'gen_reg24' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/gen_reg24.vhd:6' bound to instance 'i_reg49' of component 'gen_reg24' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_serial_coeffs.vhd:723]
+INFO: [Synth 8-3491] module 'gen_reg24' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/gen_reg24.vhd:6' bound to instance 'i_reg48' of component 'gen_reg24' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_serial_coeffs.vhd:726]
+INFO: [Synth 8-3491] module 'gen_reg24' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/gen_reg24.vhd:6' bound to instance 'i_reg47' of component 'gen_reg24' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_serial_coeffs.vhd:729]
+INFO: [Synth 8-3491] module 'gen_reg24' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/gen_reg24.vhd:6' bound to instance 'i_reg46' of component 'gen_reg24' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_serial_coeffs.vhd:732]
+INFO: [Synth 8-3491] module 'gen_reg24' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/gen_reg24.vhd:6' bound to instance 'i_reg45' of component 'gen_reg24' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_serial_coeffs.vhd:735]
+INFO: [Synth 8-3491] module 'gen_reg24' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/gen_reg24.vhd:6' bound to instance 'i_reg44' of component 'gen_reg24' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_serial_coeffs.vhd:738]
+INFO: [Synth 8-3491] module 'gen_reg24' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/gen_reg24.vhd:6' bound to instance 'i_reg43' of component 'gen_reg24' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_serial_coeffs.vhd:741]
+INFO: [Synth 8-3491] module 'gen_reg24' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/gen_reg24.vhd:6' bound to instance 'i_reg42' of component 'gen_reg24' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_serial_coeffs.vhd:744]
+INFO: [Synth 8-3491] module 'gen_reg24' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/gen_reg24.vhd:6' bound to instance 'i_reg41' of component 'gen_reg24' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_serial_coeffs.vhd:747]
+INFO: [Synth 8-3491] module 'gen_reg24' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/gen_reg24.vhd:6' bound to instance 'i_reg40' of component 'gen_reg24' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_serial_coeffs.vhd:750]
+INFO: [Synth 8-3491] module 'gen_reg24' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/gen_reg24.vhd:6' bound to instance 'i_reg39' of component 'gen_reg24' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_serial_coeffs.vhd:753]
+INFO: [Synth 8-3491] module 'gen_reg24' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/gen_reg24.vhd:6' bound to instance 'i_reg38' of component 'gen_reg24' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_serial_coeffs.vhd:756]
+INFO: [Synth 8-3491] module 'gen_reg24' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/gen_reg24.vhd:6' bound to instance 'i_reg37' of component 'gen_reg24' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_serial_coeffs.vhd:759]
+INFO: [Synth 8-3491] module 'gen_reg24' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/gen_reg24.vhd:6' bound to instance 'i_reg36' of component 'gen_reg24' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_serial_coeffs.vhd:762]
+INFO: [Synth 8-3491] module 'gen_reg24' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/gen_reg24.vhd:6' bound to instance 'i_reg35' of component 'gen_reg24' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_serial_coeffs.vhd:765]
+INFO: [Synth 8-3491] module 'gen_reg24' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/gen_reg24.vhd:6' bound to instance 'i_reg34' of component 'gen_reg24' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_serial_coeffs.vhd:768]
+INFO: [Synth 8-3491] module 'gen_reg24' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/gen_reg24.vhd:6' bound to instance 'i_reg33' of component 'gen_reg24' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_serial_coeffs.vhd:771]
+INFO: [Synth 8-3491] module 'gen_reg24' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/gen_reg24.vhd:6' bound to instance 'i_reg32' of component 'gen_reg24' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_serial_coeffs.vhd:774]
+INFO: [Synth 8-3491] module 'gen_reg24' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/gen_reg24.vhd:6' bound to instance 'i_reg31' of component 'gen_reg24' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_serial_coeffs.vhd:777]
+INFO: [Synth 8-3491] module 'gen_reg24' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/gen_reg24.vhd:6' bound to instance 'i_reg30' of component 'gen_reg24' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_serial_coeffs.vhd:780]
+INFO: [Synth 8-3491] module 'gen_reg24' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/gen_reg24.vhd:6' bound to instance 'i_reg29' of component 'gen_reg24' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_serial_coeffs.vhd:783]
+INFO: [Synth 8-3491] module 'gen_reg24' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/gen_reg24.vhd:6' bound to instance 'i_reg28' of component 'gen_reg24' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_serial_coeffs.vhd:786]
+INFO: [Synth 8-3491] module 'gen_reg24' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/gen_reg24.vhd:6' bound to instance 'i_reg27' of component 'gen_reg24' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_serial_coeffs.vhd:789]
+INFO: [Synth 8-3491] module 'gen_reg24' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/gen_reg24.vhd:6' bound to instance 'i_reg26' of component 'gen_reg24' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_serial_coeffs.vhd:792]
+INFO: [Synth 8-3491] module 'gen_reg24' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/gen_reg24.vhd:6' bound to instance 'i_reg25' of component 'gen_reg24' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_serial_coeffs.vhd:795]
+INFO: [Synth 8-3491] module 'gen_reg24' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/gen_reg24.vhd:6' bound to instance 'i_reg24' of component 'gen_reg24' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_serial_coeffs.vhd:798]
+INFO: [Synth 8-3491] module 'gen_reg24' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/gen_reg24.vhd:6' bound to instance 'i_reg23' of component 'gen_reg24' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_serial_coeffs.vhd:801]
+INFO: [Synth 8-3491] module 'gen_reg24' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/gen_reg24.vhd:6' bound to instance 'i_reg22' of component 'gen_reg24' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_serial_coeffs.vhd:804]
+INFO: [Synth 8-3491] module 'gen_reg24' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/gen_reg24.vhd:6' bound to instance 'i_reg21' of component 'gen_reg24' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_serial_coeffs.vhd:807]
+INFO: [Synth 8-3491] module 'gen_reg24' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/gen_reg24.vhd:6' bound to instance 'i_reg20' of component 'gen_reg24' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_serial_coeffs.vhd:810]
+INFO: [Synth 8-3491] module 'gen_reg24' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/gen_reg24.vhd:6' bound to instance 'i_reg19' of component 'gen_reg24' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_serial_coeffs.vhd:813]
+INFO: [Synth 8-3491] module 'gen_reg24' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/gen_reg24.vhd:6' bound to instance 'i_reg18' of component 'gen_reg24' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_serial_coeffs.vhd:816]
+INFO: [Synth 8-3491] module 'gen_reg24' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/gen_reg24.vhd:6' bound to instance 'i_reg17' of component 'gen_reg24' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_serial_coeffs.vhd:819]
+INFO: [Synth 8-3491] module 'gen_reg24' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/gen_reg24.vhd:6' bound to instance 'i_reg16' of component 'gen_reg24' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_serial_coeffs.vhd:822]
+INFO: [Synth 8-3491] module 'gen_reg24' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/gen_reg24.vhd:6' bound to instance 'i_reg15' of component 'gen_reg24' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_serial_coeffs.vhd:825]
+INFO: [Synth 8-3491] module 'gen_reg24' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/gen_reg24.vhd:6' bound to instance 'i_reg14' of component 'gen_reg24' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_serial_coeffs.vhd:828]
+INFO: [Synth 8-3491] module 'gen_reg24' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/gen_reg24.vhd:6' bound to instance 'i_reg13' of component 'gen_reg24' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_serial_coeffs.vhd:831]
+INFO: [Synth 8-3491] module 'gen_reg24' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/gen_reg24.vhd:6' bound to instance 'i_reg12' of component 'gen_reg24' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_serial_coeffs.vhd:834]
+INFO: [Synth 8-3491] module 'gen_reg24' declared at '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/gen_reg24.vhd:6' bound to instance 'i_reg11' of component 'gen_reg24' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_serial_coeffs.vhd:837]
+INFO: [Common 17-14] Message 'Synth 8-3491' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-256] done synthesizing module 'fir_serial_coeffs' (8#1) [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_serial_coeffs.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'adda_firtop' (9#1) [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/adda_firtop.vhd:26]
+INFO: [Synth 8-638] synthesizing module 'gen_reg32' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/gen_reg32.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'gen_reg32' (10#1) [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/gen_reg32.vhd:15]
+INFO: [Synth 8-638] synthesizing module 'spi_ad5541' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/spi_ad5541.vhd:21]
+	Parameter reg_width bound to: 16 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'reg_par' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/reg_par.vhd:13]
+	Parameter reg_width bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'reg_par' (11#1) [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/reg_par.vhd:13]
+INFO: [Synth 8-638] synthesizing module 'fsm_pmodda3' [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fsm_pmodda3.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'fsm_pmodda3' (12#1) [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fsm_pmodda3.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'spi_ad5541' (13#1) [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/spi_ad5541.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'fir_memo_top' (14#1) [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fir_memo_top.vhd:29]
+INFO: [Synth 8-256] done synthesizing module 'design_1_fir_memo_top_0_0' (15#1) [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ip/design_1_fir_memo_top_0_0/synth/design_1_fir_memo_top_0_0.vhd:75]
+WARNING: [Synth 8-3331] design adda_firtop has unconnected port adc_data[3]
+WARNING: [Synth 8-3331] design adda_firtop has unconnected port adc_data[2]
+WARNING: [Synth 8-3331] design adda_firtop has unconnected port adc_data[1]
+WARNING: [Synth 8-3331] design adda_firtop has unconnected port adc_data[0]
+WARNING: [Synth 8-3331] design mem_top has unconnected port addra[1]
+WARNING: [Synth 8-3331] design mem_top has unconnected port addra[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1306.391 ; gain = 128.527 ; free physical = 179 ; free virtual = 6645
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1306.391 ; gain = 128.527 ; free physical = 181 ; free virtual = 6646
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ip/design_1_fir_memo_top_0_0/src/Z7010 or Z7020 MicroZed with MBCC-IO-PCB-D_v2.xdc] for cell 'U0'
+WARNING: [Vivado 12-584] No ports matched '[get_ports -of_objects [get_iobanks 34]]'. [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ip/design_1_fir_memo_top_0_0/src/Z7010 or Z7020 MicroZed with MBCC-IO-PCB-D_v2.xdc:292]
+Finished Parsing XDC File [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ip/design_1_fir_memo_top_0_0/src/Z7010 or Z7020 MicroZed with MBCC-IO-PCB-D_v2.xdc] for cell 'U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ip/design_1_fir_memo_top_0_0/src/Z7010 or Z7020 MicroZed with MBCC-IO-PCB-D_v2.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_fir_memo_top_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_fir_memo_top_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.runs/design_1_fir_memo_top_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.runs/design_1_fir_memo_top_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.28 ; elapsed = 00:00:00.10 . Memory (MB): peak = 1656.820 ; gain = 0.000 ; free physical = 120 ; free virtual = 6257
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:39 ; elapsed = 00:00:56 . Memory (MB): peak = 1656.820 ; gain = 478.957 ; free physical = 204 ; free virtual = 6341
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:39 ; elapsed = 00:00:56 . Memory (MB): peak = 1656.820 ; gain = 478.957 ; free physical = 203 ; free virtual = 6341
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  /home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.runs/design_1_fir_memo_top_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:39 ; elapsed = 00:00:56 . Memory (MB): peak = 1656.820 ; gain = 478.957 ; free physical = 205 ; free virtual = 6343
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element sam_ctr_reg was removed.  [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/mem_top.vhd:169]
+WARNING: [Synth 8-6014] Unused sequential element portb_adr_ctr_reg was removed.  [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/mem_top.vhd:110]
+WARNING: [Synth 8-6014] Unused sequential element sam_ctr_reg was removed.  [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/adda_firtop.vhd:87]
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'fsm_pmodda3'
+INFO: [Synth 8-5544] ROM "d_out_ld_send_reg" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "d_out_shift" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "d_out_CS" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "d_out_sclk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "d_out_ldac" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "d_out_ready" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nxt_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nxt_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element ctr_reg was removed.  [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/spi_ad5541.vhd:59]
+INFO: [Synth 8-3971] The signal RAM_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal RAM_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal RAM_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal RAM_reg was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  s_idle |                             0000 |                             0000
+                 s_start |                             0001 |                             0001
+                 s_send0 |                             0010 |                             0010
+                 s_send1 |                             0011 |                             0011
+                 s_send2 |                             0100 |                             0100
+                 s_send3 |                             0101 |                             0101
+                   s_cs1 |                             0110 |                             0110
+                 s_ldac0 |                             0111 |                             0111
+                 s_ldac1 |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'fsm_pmodda3'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:40 ; elapsed = 00:00:58 . Memory (MB): peak = 1656.820 ; gain = 478.957 ; free physical = 191 ; free virtual = 6328
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 101   
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               24 Bit    Registers := 102   
+	               20 Bit    Registers := 102   
+	               16 Bit    Registers := 2     
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 8     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---RAMs : 
+	               4K Bit         RAMs := 4     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 102   
+	   2 Input     16 Bit        Muxes := 3     
+	   9 Input      4 Bit        Muxes := 6     
+	  13 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 5     
+	   5 Input      1 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module dp_ram_byte0 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
++---RAMs : 
+	               4K Bit         RAMs := 1     
+Module dp_ram_byte1 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
++---RAMs : 
+	               4K Bit         RAMs := 1     
+Module dp_ram_byte2 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
++---RAMs : 
+	               4K Bit         RAMs := 1     
+Module dp_ram_byte3 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
++---RAMs : 
+	               4K Bit         RAMs := 1     
+Module mem_top 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+Module sreg_fir 
+Detailed RTL Component Info : 
++---Registers : 
+	               20 Bit    Registers := 102   
+Module gen_reg24 
+Detailed RTL Component Info : 
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+Module fir_serial_coeffs 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 101   
+Module adda_firtop 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module gen_reg32 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module reg_par 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+Module fsm_pmodda3 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   9 Input      4 Bit        Muxes := 6     
+	  13 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 3     
+	   5 Input      1 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module spi_ad5541 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module fir_memo_top 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+WARNING: [Synth 8-6014] Unused sequential element spi_dac/i_fsm_pmodda3/ready_reg was removed.  [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/fsm_pmodda3.vhd:110]
+WARNING: [Synth 8-6014] Unused sequential element i_mem_top/sam_ctr_reg was removed.  [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/mem_top.vhd:169]
+WARNING: [Synth 8-6014] Unused sequential element i_mem_top/portb_adr_ctr_reg was removed.  [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/mem_top.vhd:110]
+WARNING: [Synth 8-6014] Unused sequential element i_adda_firtop/sam_ctr_reg was removed.  [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/adda_firtop.vhd:87]
+WARNING: [Synth 8-6014] Unused sequential element spi_dac/ctr_reg was removed.  [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/spi_ad5541.vhd:59]
+WARNING: [Synth 8-3331] design fir_memo_top has unconnected port addra[1]
+WARNING: [Synth 8-3331] design fir_memo_top has unconnected port addra[0]
+WARNING: [Synth 8-6014] Unused sequential element i_mem_top/my_mem0/RAM_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element i_mem_top/my_mem1/RAM_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element i_mem_top/my_mem2/RAM_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element i_mem_top/my_mem3/RAM_reg was removed. 
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[101][1]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[101][0]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[100][1]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[100][0]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[99][1]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[99][0]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[98][1]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[98][0]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[97][1]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[97][0]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[96][1]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[96][0]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[95][1]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[95][0]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[94][1]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[94][0]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[93][1]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[93][0]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[92][1]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[92][0]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[91][1]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[91][0]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[90][1]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[90][0]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[89][1]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[89][0]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[88][1]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[88][0]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[87][1]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[87][0]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[86][1]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[86][0]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[85][1]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[85][0]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[84][1]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[84][0]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[83][1]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[83][0]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[82][1]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[82][0]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[81][1]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[81][0]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[80][1]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[80][0]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[79][1]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[79][0]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[78][1]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[78][0]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[77][1]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[77][0]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[76][1]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[76][0]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[75][1]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[75][0]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[74][1]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[74][0]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[73][1]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[73][0]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[72][1]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[72][0]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[71][1]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[71][0]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[70][1]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[70][0]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[69][1]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[69][0]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[68][1]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[68][0]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[67][1]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[67][0]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[66][1]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[66][0]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[65][1]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[65][0]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[64][1]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[64][0]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[63][1]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[63][0]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[62][1]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[62][0]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[61][1]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[61][0]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[60][1]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[60][0]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[59][1]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[59][0]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[58][1]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[58][0]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[57][1]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[57][0]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[56][1]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[56][0]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[55][1]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[55][0]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[54][1]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[54][0]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[53][1]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[53][0]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[52][1]) is unused and will be removed from module fir_serial_coeffs.
+WARNING: [Synth 8-3332] Sequential element (i_sreg_fir/sreg_fir_reg[52][0]) is unused and will be removed from module fir_serial_coeffs.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:46 ; elapsed = 00:01:04 . Memory (MB): peak = 1656.820 ; gain = 478.957 ; free physical = 173 ; free virtual = 6313
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping  Report (see note below)
++--------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name   | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++--------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|dp_ram_byte0: | RAM_reg    | 512 x 8(WRITE_FIRST)   | W | R | 512 x 8(WRITE_FIRST)   | W | R | Port A and B     | 1      | 0      | 
+|dp_ram_byte1: | RAM_reg    | 512 x 8(WRITE_FIRST)   | W | R | 512 x 8(WRITE_FIRST)   | W | R | Port A and B     | 1      | 0      | 
+|dp_ram_byte2: | RAM_reg    | 512 x 8(WRITE_FIRST)   | W | R | 512 x 8(WRITE_FIRST)   | W | R | Port A and B     | 1      | 0      | 
+|dp_ram_byte3: | RAM_reg    | 512 x 8(WRITE_FIRST)   | W | R | 512 x 8(WRITE_FIRST)   | W | R | Port A and B     | 1      | 0      | 
++--------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The tale above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+DSP: Preliminary Mapping  Report (see note below)
++------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name       | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_serial_coeffs | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:57 ; elapsed = 00:01:19 . Memory (MB): peak = 1664.820 ; gain = 486.957 ; free physical = 120 ; free virtual = 6160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:58 ; elapsed = 00:01:20 . Memory (MB): peak = 1668.820 ; gain = 490.957 ; free physical = 127 ; free virtual = 6155
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping  Report
++--------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name   | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++--------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|dp_ram_byte0: | RAM_reg    | 512 x 8(WRITE_FIRST)   | W | R | 512 x 8(WRITE_FIRST)   | W | R | Port A and B     | 1      | 0      | 
+|dp_ram_byte1: | RAM_reg    | 512 x 8(WRITE_FIRST)   | W | R | 512 x 8(WRITE_FIRST)   | W | R | Port A and B     | 1      | 0      | 
+|dp_ram_byte2: | RAM_reg    | 512 x 8(WRITE_FIRST)   | W | R | 512 x 8(WRITE_FIRST)   | W | R | Port A and B     | 1      | 0      | 
+|dp_ram_byte3: | RAM_reg    | 512 x 8(WRITE_FIRST)   | W | R | 512 x 8(WRITE_FIRST)   | W | R | Port A and B     | 1      | 0      | 
++--------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ipshared/e138/src/gen_reg24.vhd:23]
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/i_3317)
+INFO: [Synth 8-4480] The timing for the instance U0/i_mem_top/my_mem0/RAM_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/i_mem_top/my_mem0/RAM_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/i_mem_top/my_mem1/RAM_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/i_mem_top/my_mem1/RAM_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/i_mem_top/my_mem2/RAM_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/i_mem_top/my_mem2/RAM_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/i_mem_top/my_mem3/RAM_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/i_mem_top/my_mem3/RAM_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:00 ; elapsed = 00:01:22 . Memory (MB): peak = 1701.492 ; gain = 523.629 ; free physical = 140 ; free virtual = 6149
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:01 ; elapsed = 00:01:23 . Memory (MB): peak = 1701.492 ; gain = 523.629 ; free physical = 139 ; free virtual = 6148
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:01 ; elapsed = 00:01:23 . Memory (MB): peak = 1701.492 ; gain = 523.629 ; free physical = 139 ; free virtual = 6148
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:02 ; elapsed = 00:01:24 . Memory (MB): peak = 1701.492 ; gain = 523.629 ; free physical = 138 ; free virtual = 6147
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:02 ; elapsed = 00:01:24 . Memory (MB): peak = 1701.492 ; gain = 523.629 ; free physical = 138 ; free virtual = 6147
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:02 ; elapsed = 00:01:24 . Memory (MB): peak = 1701.492 ; gain = 523.629 ; free physical = 138 ; free virtual = 6147
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:02 ; elapsed = 00:01:24 . Memory (MB): peak = 1701.492 ; gain = 523.629 ; free physical = 138 ; free virtual = 6147
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BUFG       |     1|
+|2     |CARRY4     |   614|
+|3     |DSP48E1    |   102|
+|4     |LUT1       |    35|
+|5     |LUT2       |  2428|
+|6     |LUT3       |    36|
+|7     |LUT4       |     8|
+|8     |LUT5       |    25|
+|9     |LUT6       |    12|
+|10    |RAMB18E1   |     1|
+|11    |RAMB18E1_1 |     1|
+|12    |RAMB18E1_2 |     1|
+|13    |RAMB18E1_3 |     1|
+|14    |FDRE       |  4318|
+|15    |FDSE       |     8|
++------+-----------+------+
+
+Report Instance Areas: 
++------+--------------------+------------------+------+
+|      |Instance            |Module            |Cells |
++------+--------------------+------------------+------+
+|1     |top                 |                  |  7591|
+|2     |  U0                |fir_memo_top      |  7591|
+|3     |    i_adda_firtop   |adda_firtop       |  7413|
+|4     |      myfilter      |fir_serial_coeffs |  7372|
+|5     |        i_reg1      |gen_reg24         |    24|
+|6     |        i_reg10     |gen_reg24_0       |    24|
+|7     |        i_reg100    |gen_reg24_1       |    24|
+|8     |        i_reg11     |gen_reg24_2       |    24|
+|9     |        i_reg12     |gen_reg24_3       |    24|
+|10    |        i_reg13     |gen_reg24_4       |    24|
+|11    |        i_reg14     |gen_reg24_5       |    24|
+|12    |        i_reg15     |gen_reg24_6       |    24|
+|13    |        i_reg16     |gen_reg24_7       |    24|
+|14    |        i_reg17     |gen_reg24_8       |    24|
+|15    |        i_reg18     |gen_reg24_9       |    24|
+|16    |        i_reg19     |gen_reg24_10      |    24|
+|17    |        i_reg2      |gen_reg24_11      |    24|
+|18    |        i_reg20     |gen_reg24_12      |    24|
+|19    |        i_reg21     |gen_reg24_13      |    24|
+|20    |        i_reg22     |gen_reg24_14      |    24|
+|21    |        i_reg23     |gen_reg24_15      |    24|
+|22    |        i_reg24     |gen_reg24_16      |    24|
+|23    |        i_reg25     |gen_reg24_17      |    24|
+|24    |        i_reg26     |gen_reg24_18      |    24|
+|25    |        i_reg27     |gen_reg24_19      |    24|
+|26    |        i_reg28     |gen_reg24_20      |    24|
+|27    |        i_reg29     |gen_reg24_21      |    24|
+|28    |        i_reg3      |gen_reg24_22      |    24|
+|29    |        i_reg30     |gen_reg24_23      |    24|
+|30    |        i_reg31     |gen_reg24_24      |    24|
+|31    |        i_reg32     |gen_reg24_25      |    24|
+|32    |        i_reg33     |gen_reg24_26      |    24|
+|33    |        i_reg34     |gen_reg24_27      |    24|
+|34    |        i_reg35     |gen_reg24_28      |    24|
+|35    |        i_reg36     |gen_reg24_29      |    24|
+|36    |        i_reg37     |gen_reg24_30      |    24|
+|37    |        i_reg38     |gen_reg24_31      |    24|
+|38    |        i_reg39     |gen_reg24_32      |    24|
+|39    |        i_reg4      |gen_reg24_33      |    24|
+|40    |        i_reg40     |gen_reg24_34      |    24|
+|41    |        i_reg41     |gen_reg24_35      |    24|
+|42    |        i_reg42     |gen_reg24_36      |    24|
+|43    |        i_reg43     |gen_reg24_37      |    24|
+|44    |        i_reg44     |gen_reg24_38      |    24|
+|45    |        i_reg45     |gen_reg24_39      |    24|
+|46    |        i_reg46     |gen_reg24_40      |    24|
+|47    |        i_reg47     |gen_reg24_41      |    24|
+|48    |        i_reg48     |gen_reg24_42      |    24|
+|49    |        i_reg49     |gen_reg24_43      |    24|
+|50    |        i_reg5      |gen_reg24_44      |    24|
+|51    |        i_reg50     |gen_reg24_45      |    24|
+|52    |        i_reg51     |gen_reg24_46      |    24|
+|53    |        i_reg52     |gen_reg24_47      |    24|
+|54    |        i_reg53     |gen_reg24_48      |    24|
+|55    |        i_reg54     |gen_reg24_49      |    24|
+|56    |        i_reg55     |gen_reg24_50      |    24|
+|57    |        i_reg56     |gen_reg24_51      |    24|
+|58    |        i_reg57     |gen_reg24_52      |    24|
+|59    |        i_reg58     |gen_reg24_53      |    24|
+|60    |        i_reg59     |gen_reg24_54      |    24|
+|61    |        i_reg6      |gen_reg24_55      |    24|
+|62    |        i_reg60     |gen_reg24_56      |    24|
+|63    |        i_reg61     |gen_reg24_57      |    24|
+|64    |        i_reg62     |gen_reg24_58      |    24|
+|65    |        i_reg63     |gen_reg24_59      |    24|
+|66    |        i_reg64     |gen_reg24_60      |    24|
+|67    |        i_reg65     |gen_reg24_61      |    24|
+|68    |        i_reg66     |gen_reg24_62      |    24|
+|69    |        i_reg67     |gen_reg24_63      |    24|
+|70    |        i_reg68     |gen_reg24_64      |    24|
+|71    |        i_reg69     |gen_reg24_65      |    24|
+|72    |        i_reg7      |gen_reg24_66      |    24|
+|73    |        i_reg70     |gen_reg24_67      |    24|
+|74    |        i_reg71     |gen_reg24_68      |    24|
+|75    |        i_reg72     |gen_reg24_69      |    24|
+|76    |        i_reg73     |gen_reg24_70      |    24|
+|77    |        i_reg74     |gen_reg24_71      |    24|
+|78    |        i_reg75     |gen_reg24_72      |    24|
+|79    |        i_reg76     |gen_reg24_73      |    24|
+|80    |        i_reg77     |gen_reg24_74      |    24|
+|81    |        i_reg78     |gen_reg24_75      |    24|
+|82    |        i_reg79     |gen_reg24_76      |    24|
+|83    |        i_reg8      |gen_reg24_77      |    24|
+|84    |        i_reg80     |gen_reg24_78      |    24|
+|85    |        i_reg81     |gen_reg24_79      |    24|
+|86    |        i_reg82     |gen_reg24_80      |    24|
+|87    |        i_reg83     |gen_reg24_81      |    24|
+|88    |        i_reg84     |gen_reg24_82      |    24|
+|89    |        i_reg85     |gen_reg24_83      |    24|
+|90    |        i_reg86     |gen_reg24_84      |    24|
+|91    |        i_reg87     |gen_reg24_85      |    24|
+|92    |        i_reg88     |gen_reg24_86      |    24|
+|93    |        i_reg89     |gen_reg24_87      |    24|
+|94    |        i_reg9      |gen_reg24_88      |    24|
+|95    |        i_reg90     |gen_reg24_89      |    24|
+|96    |        i_reg91     |gen_reg24_90      |    24|
+|97    |        i_reg92     |gen_reg24_91      |    24|
+|98    |        i_reg93     |gen_reg24_92      |    24|
+|99    |        i_reg94     |gen_reg24_93      |    24|
+|100   |        i_reg95     |gen_reg24_94      |    24|
+|101   |        i_reg96     |gen_reg24_95      |    24|
+|102   |        i_reg97     |gen_reg24_96      |    24|
+|103   |        i_reg98     |gen_reg24_97      |    24|
+|104   |        i_reg99     |gen_reg24_98      |    24|
+|105   |        i_sreg_fir  |sreg_fir          |  1839|
+|106   |    i_contr_reg     |gen_reg32         |     3|
+|107   |    i_mem_top       |mem_top           |    98|
+|108   |      my_mem0       |dp_ram_byte0      |     9|
+|109   |      my_mem1       |dp_ram_byte1      |     9|
+|110   |      my_mem2       |dp_ram_byte2      |     9|
+|111   |      my_mem3       |dp_ram_byte3      |     9|
+|112   |    spi_dac         |spi_ad5541        |    76|
+|113   |      i_fsm_pmodda3 |fsm_pmodda3       |    20|
+|114   |      i_reg_din     |reg_par           |    31|
++------+--------------------+------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:02 ; elapsed = 00:01:24 . Memory (MB): peak = 1701.492 ; gain = 523.629 ; free physical = 138 ; free virtual = 6147
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 275 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:46 ; elapsed = 00:00:53 . Memory (MB): peak = 1701.492 ; gain = 173.199 ; free physical = 203 ; free virtual = 6212
+Synthesis Optimization Complete : Time (s): cpu = 00:01:02 ; elapsed = 00:01:24 . Memory (MB): peak = 1701.500 ; gain = 523.629 ; free physical = 203 ; free virtual = 6212
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 720 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+169 Infos, 122 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:06 ; elapsed = 00:01:28 . Memory (MB): peak = 1701.500 ; gain = 537.012 ; free physical = 194 ; free virtual = 6204
+INFO: [Common 17-1381] The checkpoint '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.runs/design_1_fir_memo_top_0_0_synth_1/design_1_fir_memo_top_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP /home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.srcs/sources_1/bd/design_1/ip/design_1_fir_memo_top_0_0/design_1_fir_memo_top_0_0.xci
+INFO: [Coretcl 2-1174] Renamed 113 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/simon/FPGADEVELOPER/HWD-CDMA-BRAM/HWD-CDMA-BRAM.runs/design_1_fir_memo_top_0_0_synth_1/design_1_fir_memo_top_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_fir_memo_top_0_0_utilization_synth.rpt -pb design_1_fir_memo_top_0_0_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00.18 ; elapsed = 00:00:00.25 . Memory (MB): peak = 1725.504 ; gain = 0.000 ; free physical = 182 ; free virtual = 6202
+INFO: [Common 17-206] Exiting Vivado at Mon Jan 13 18:54:58 2020...
